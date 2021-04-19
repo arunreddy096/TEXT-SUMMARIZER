@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <style>
+        body 
+        {
+          background-color: rgb(128, 125, 125); 
+          
+        }
+        input[type=text]
+        {
+        width:50%;
+        padding:10px;
+        font-size:20px;
+        border-radius:10px;
+        border:none
+        }
+        input[type=number]
+        {
+        width:50%;
+        padding:10px;
+        font-size:20px;
+        border-radius:10px;
+        border:none
+        }
+        input[type=submit]
+        {
+          color:black;
+          font-size: 15px;
+          padding: 10px 15px;
+          border: none;
+          cursor: pointer;
+          border-radius: 10px;
+          text-align: center;
+        }
+        input[type=sumbit]:hover
+        {
+          background-color:black;
+          color: white;
+        }
+        input[type=text]:hover
+        {
+         border:black;
+        }
+        input[type=number]:hover
+        {
+         border:black;
+        }
+        </style>
+</head>
+<body>
+    <form action="/out" method="POST">
+        <center>
+       <input type="text" name="url" placeholder="enter link"><br>
+        <pre></pre>
+        <input type="number" name="nol" placeholder="enter maximum number of lines">
+        <br><pre></pre>
+        <button type="submit">Summarize</button>
+    </center>
+    </form>
+
+</body>
+</html>
